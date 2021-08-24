@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
 import Header from './components/Header';
-import Login, { userCredentials } from './pages/Login';
+import Login, { UserCredentials } from './pages/Login';
 
 import './App.css';
 import HomePage from './pages/Homepage';
@@ -18,7 +18,7 @@ function App() {
   const [loggedUser, setLoggedUser] = useState<User | null>(null);
   const history = useHistory();
 
-  const loginUser = (userCreds: userCredentials) => {
+  const loginUser = (userCreds: UserCredentials) => {
     postLoginUser(userCreds).then((user) => {
       setLoggedUser(user);
       history.push('/');
