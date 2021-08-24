@@ -1,0 +1,58 @@
+#root {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr;
+  background-color: whitesmoke;
+}
+
+header {
+  background-color: grey;
+  padding: 0 1rem;
+}
+
+main {
+  display: grid;
+  place-content: center;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-size: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+input,
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+input[type='submit'] {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.header {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-form {
+  padding: 2rem;
+  border: 1px solid black;
+}
+
+.login-form > h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
