@@ -5,7 +5,7 @@ import Login, { UserCredentials } from './pages/Login';
 
 import './App.css';
 import HomePage from './pages/Homepage';
-import { postLoginUser } from './utils/apiClient';
+import { postLoginUser } from './utilities/apiClient';
 
 export type User = {
   id: number;
@@ -28,7 +28,7 @@ function App() {
     setLoggedUser(null);
   };
   return (
-    <div className='App'>
+    <>
       <Header loggedUser={loggedUser} clearUserState={clearUserState} />
       <main>
         <Switch>
@@ -40,7 +40,7 @@ function App() {
           </Route>
         </Switch>
       </main>
-    </div>
+    </>
   );
 }
 

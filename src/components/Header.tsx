@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { User } from '../App';
 import { getLogoutUser } from '../utilities/apiClient';
 
@@ -30,8 +30,6 @@ const LoggedInHeader = ({
 };
 
 const Header = ({ loggedUser, clearUserState }: HeaderProps) => {
-  const location = useLocation();
-
   return (
     <header className='header'>
       <h1>Welcome to my Auth App</h1>
