@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Redirect, Route, Switch, useHistory } from 'react-router-dom';
-// import Header from './components/Header'
-// import Login, {userCredentials} from './pages/Login'
+import Header from './components/Header';
+import Login, { userCredentials } from './pages/Login';
 
 import './App.css';
+import HomePage from './pages/Homepage';
 import { postLoginUser } from './utils/apiClient';
 
 export type User = {
