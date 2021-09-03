@@ -1,13 +1,13 @@
 import React from 'react';
 
-// export type UserType = {
-//   id: number;
-//   user: { username: string };
-// };
+export type UserType = {
+  id: number;
+  user: { username: string };
+};
 
-// type HomeProps = {
-//   home: UserType;
-// };
+type HomeProps = {
+  home: UserType;
+};
 
 const Home = () => {
   return (
